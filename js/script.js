@@ -1,5 +1,11 @@
 // menu 
-let menu =document.querySelector('.main_menu')
+let menu =document.querySelector('.main_menu');
+let menuIcon= document.querySelector('#menu_open');
+let menuBtn= document.querySelector('.menu_btn') 
+
+menuBtn.addEventListener('click', ()=>{
+    menuIcon.classList.toggle('bx-x')
+})
 
 window.addEventListener('scroll',()=>{
     let scrolling = this.scrollY
