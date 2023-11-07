@@ -27,6 +27,9 @@ a{
     text-decoration: none;
     display: inline-block;
 }
+body{
+    background-color: #FFF8EE;
+}
 /* ----------------------- common end ----------------------- */
 /* ====================== manu start ======================= */
 .main_menu{
@@ -279,6 +282,104 @@ a{
     background: #fff;
 }
 /* ----------------------- food Item end ----------------------- */
+/* ====================== Dishes start ======================= */
+#spacial_dishes{
+    background: url(../images/dishes_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 95px;
+    padding-bottom: 51px;
+}
+
+#spacial_dishes .heding h1{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: var(--roboto);
+    color: var(--brand_color);
+    text-align: center;
+    margin-bottom: 16px;
+}
+#spacial_dishes .dishes_card{
+    background-color: #fff;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    overflow: hidden ;
+    box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.30);
+}
+
+#spacial_dishes .dishes_card .card_content h2{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--roboto);
+    color: var(--brand_color);
+    text-align: center;
+    margin-top: 16px;
+}
+#spacial_dishes .dishes_card .card_content p{
+    width: 170px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--roboto);
+    color: #000;
+    text-align: center;
+    margin: 0 auto;
+}
+#spacial_dishes .dishes_card .card_btn a{
+    width: 120px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--roboto);
+    color: #FFF;
+    background-color: var(--brand_color);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 17px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: .4s all linear;
+}
+#spacial_dishes .dishes_card .card_btn a:hover{
+    background: transparent;
+    color: #000;
+    border: 1px solid var(--brand_color);
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+#spacial_dishes .more_dishes_btn{
+    display: flex;
+    justify-content: end;
+}
+#spacial_dishes .more_dishes_btn a{
+    padding: 10px 32px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--roboto);
+    color: #FFF;
+    background-color: var(--brand_color);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-top: 36px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: all linear .4s ;
+}
+#spacial_dishes .more_dishes_btn a:hover{
+    background: transparent;
+    color: #000;
+    border: 1px solid var(--brand_color);
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+/* ----------------------- Dishes end ----------------------- */
+/* ====================== manu start ======================= */
+
+/* ----------------------- menu end ----------------------- */
 /* ====================== manu start ======================= */
 
 /* ----------------------- menu end ----------------------- */
