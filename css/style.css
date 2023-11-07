@@ -1,0 +1,140 @@
+/* ====================== font link start ======================= */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* ----------------------- font link end ----------------------- */
+
+/* ====================== ver start ======================= */
+:root{
+    --roboto:'Roboto', sans-serif;
+    --brand_color: #1A5D1A;
+}
+/* ----------------------- ver end ----------------------- */
+/* ====================== common start ======================= */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+/* ----------------------- common end ----------------------- */
+/* ====================== manu start ======================= */
+.main_menu{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.main_menu ul{
+    display: flex;
+    gap: 30px;
+}
+
+
+.main_menu ul li{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--roboto);
+    color: #000 !important;  
+    text-transform: uppercase;
+    position: relative;
+    transition: all linear .3s;
+}
+
+.main_menu ul li::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: 9px;
+    left: 0;
+    background-color: #1A5D1A;
+    transition: all linear .3s;
+}
+.main_menu ul li:hover::after{
+    width: 100%;
+}
+.main_menu ul li a:hover{
+    color: var(--brand_color) !important;
+}
+.main_menu .menu_btn{
+    display: flex;
+    gap: 52px;
+}
+.main_menu .menu_btn .btn_one{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--roboto);
+    color: #FFF;
+    background: var(--brand_color);
+    border-radius: 15px;
+}
+
+.main_menu .menu_btn .btn_two{
+    width: 110px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--roboto);
+    color: #FFF;
+    background: var(--brand_color);
+    border-radius: 15px;
+}
+/* ----------------------- menu end ----------------------- */
+/* ====================== manu start ======================= */
+#banner{
+    background: url(../images/banner_bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 37px;
+}
+
+#banner .banner_img{
+    margin: 0 auto;
+    width: 424px;
+}
+
+#banner .banner_btn{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#banner .banner_btn a{
+    padding: 15px 47px;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 50px;
+    color: #000;
+    background: #FFF8EE;
+    box-shadow: 0px 4px 4px 0px rgba(10, 2, 2, 0.71) inset;
+}
+#banner .banner_btn a span{
+    margin-left: 4px;
+}
+/* ----------------------- menu end ----------------------- */
+/* ====================== manu start ======================= */
+
+/* ----------------------- menu end ----------------------- */
+/* ====================== manu start ======================= */
+
+/* ----------------------- menu end ----------------------- */
