@@ -36,6 +36,26 @@ a{
     justify-content: space-between;
     padding: 15px 0;
 }
+ .menu_fixed{
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent !important;
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    animation: menu_down 1s linear;
+}
+
+@keyframes menu_down {
+    from{
+        top: -10%;
+    }
+    to{
+        top:0;
+    }
+}
 
 .main_menu ul{
     display: flex;
@@ -131,10 +151,134 @@ a{
 #banner .banner_btn a span{
     margin-left: 4px;
 }
-/* ----------------------- menu end ----------------------- */
-/* ====================== manu start ======================= */
 
+#banner .banner_contact{
+    display: flex;
+    gap: 87px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+#banner .banner_contact .phone a{
+    width: 244px;
+    padding: 3px 45px 2px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    background: #D9D9D9;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--roboto);
+    color: #000;
+}
+
+#banner .banner_contact .phone a span{
+    text-align: center;
+    margin-right: 15px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background-color: #1F8BE2;
+    display: inline-block;
+}
+
+#banner .banner_contact .banner_icon a{
+    width: 35px;
+    margin-left: 15px;
+}
 /* ----------------------- menu end ----------------------- */
+/* ====================== food Item start ======================= */
+#food_item{
+    background: url(../images/food_item_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 54px;
+    padding-bottom: 112px;
+}
+
+#food_item .food_heder h2{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--roboto);
+    color: #000;
+    text-align: center;
+}
+#food_item .food_heder h3{
+    font-size: 35px;
+    font-weight: 700;
+    font-family: var(--roboto);
+    color: var(--brand_color);
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 42px;
+}
+.slider_cards{
+    display: flex;
+    gap: 33px;
+    justify-content: center;
+}
+
+.slick-list{
+    padding-top: 40px;
+}
+#food_item  .card{
+    width: 250px !important;
+    border-radius: 15px;
+    position: relative;
+}
+
+#food_item  .card .discount{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    transform: translateY(-50%);
+    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#food_item  .card .discount p{
+    width: 31px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--roboto);
+    color: #DD0606;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.slider_cards ul{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: -60px;
+}
+
+.slider_cards ul li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--brand_color);
+}
+
+.slider_cards ul .slick-active{
+    background-color: var(--brand_color);
+}
+.slider_cards ul li button{
+    font-size: 0;
+    border: none;
+    background: #fff;
+}
+/* ----------------------- food Item end ----------------------- */
 /* ====================== manu start ======================= */
 
 /* ----------------------- menu end ----------------------- */
