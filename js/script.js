@@ -1,7 +1,7 @@
 // menu 
 let menu =document.querySelector('.main_menu');
 let menuIcon= document.querySelector('#menu_open');
-let menuBtn= document.querySelector('.menu_btn') 
+let menuBtn= document.querySelector('.navbar-toggler') 
 
 menuBtn.addEventListener('click', ()=>{
     menuIcon.classList.toggle('bx-x')
